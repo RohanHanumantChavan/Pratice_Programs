@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<stdbool.h>
+bool DivisibleByThreeAndFive(int iNo)
+{
+    if((iNo % 3 == 0) &&(iNo % 5 == 0))
+    {
+        return true;
+    }
+    else
+    {
+       return false;
+    }
+}
+int main()
+{
+    int iValue = 0;
+    bool bRet = false;
+
+    printf("Enter number is :\n");
+    scanf("%d",&iValue);
+
+    bRet = DivisibleByThreeAndFive(iValue);
+    if(bRet == true)
+    {
+        printf("Number is divsible by 3 and 5 \n");
+    }
+    else
+    {
+        printf("number is not divisible by 3 and 5 \n");
+    }
+
+
+
+    return 0;
+}
